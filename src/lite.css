@@ -1,0 +1,84 @@
+:root {
+  --lite-colours-light: #fbfffe;
+  --lite-colours-lightgray: #eee;
+  --lite-colours-gray: #999;
+  --lite-arrow-color: #141021;
+
+  --lite-colours-dark: #284b63;
+  --lite-colours-secondary: #84a59d;
+  --lite-colours-highlight: #f28482;
+}
+
+/* Card Styling */
+.lite-card {
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+/* Hover Effects */
+.lite-hover {
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.lite-hover:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.18), 0 10px 10px rgba(0,0,0,0.16);
+  transform: translateY(-0.1em)
+}
+
+/* Shadow Styling */
+.lite-shadow {
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+/* Horizontal List styling */
+ul.lite-hl {
+  font-family: "Open Sans";
+  position: relative;
+  bottom: 0px;
+  margin-bottom: 1em;
+  float: left;
+  list-style: none;
+}
+
+ul.lite-hl li {
+  display:inline-block;
+  border-style: none;
+  font-size: 1em;
+  margin-right: 3px;
+  padding: 0.4rem;
+  border-radius: 2px;
+  color: var(--lite-colours-light);
+  background-color: var(--lite-colours-secondary);
+  margin-bottom: 0.4em;
+}
+
+/* Button Styles */
+.lite-button {
+  background-color: var(--lite-colours-dark);
+  color: var(--lite-colours-light);
+  width: 7em;
+  padding: 0.8em;
+  padding-bottom: 0.9em;
+  border-radius: 2em;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+/* Link/Text/Header Styling */
+
+/* Layout Styling */
+
+.lite-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.lite-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.lite-content-column {
+  padding: 0 20vw 30px 20vw;
+  background: var(--light);
+}
