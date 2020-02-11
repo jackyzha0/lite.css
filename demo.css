@@ -17,3 +17,32 @@ a {
 p, ul, button {
 	font-family: Open Sans;
 }
+
+#pad {
+	padding: 0 2em;
+}
+
+img {
+	max-width: 248px;
+	max-height: 220px;
+	width: auto;
+	height: auto;
+}
+
+@media all and (max-width: 450px) {
+	.lt-content-column {
+		padding: 0 5vw 30px 5vw;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	#flexDiv {
+		flex-direction: column;
+	}
+
+	img {
+		max-width: none;
+		max-height: none;
+		width: 100%;
+	}
+}

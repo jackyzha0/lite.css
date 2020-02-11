@@ -13,3 +13,6 @@ See example usages on the [project page](https://jzhao.xyz/lite.css/).
 tired of css libraries that are too thicc? want something lightweight enough that will barely dent your page-load times? you came to the right place! `lite.css` is a grand total of ~2kB minified, meaning 
 
 ## docs
+
+theming
+

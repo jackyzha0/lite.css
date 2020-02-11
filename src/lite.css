@@ -1,12 +1,11 @@
 :root {
-  --lite-colours-light: #fbfffe;
-  --lite-colours-lightgray: #f0f0f0;
-  --lite-colours-gray: #999;
-  --lite-arrow-color: #141021;
+  --lt-colours-light: #fbfffe;
+  --lt-colours-lightgray: #f0f0f0;
+  --lt-colours-gray: #999;
+  --lt-arrow-color: #141021;
 
-  --lite-colours-dark: #284b63;
-  --lite-colours-secondary: #84a59d;
-  --lite-colours-highlight: #f28482;
+  --lt-colours-dark: #284b63;
+  --lt-colours-secondary: #84a59d;
 }
 
 /* Card Styling */
@@ -14,7 +13,12 @@
   padding: 0.25em 1em;
   margin: 0.5em 0;
   border-radius: 5px;
-  background-color: var(--lite-colours-lightgray);
+  background-color: var(--lt-colours-lightgray);
+}
+
+.lt-clear {
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 /* Hover Effects */
@@ -45,21 +49,22 @@ ul.lt-hl li {
   margin-right: 3px;
   padding: 0.3rem;
   border-radius: 2px;
-  color: var(--lite-colours-light);
-  background-color: var(--lite-colours-secondary);
+  color: var(--lt-colours-light);
+  background-color: var(--lt-colours-secondary);
   margin-bottom: 0.2em;
 }
 
 /* Button/Input Styles */
 .lt-button {
-  background-color: var(--lite-colours-dark);
-  color: var(--lite-colours-light);
-  padding: 0.8em 2em;
+  background-color: var(--lt-colours-dark);
+  color: var(--lt-colours-light);
+  padding: 0.5em 2em;
   border-radius: 5px;
   margin-bottom: 1em;
   margin-right: 1em;
   cursor: pointer;
   border: none;
+  font-size: 0.8em;
 }
 
 .lt-round {
@@ -86,13 +91,13 @@ h3 {
   font-weight: 400;
 }
 
-a {
-  font-size: 1em;
-  color: var(--lite-colours-dark);
-  padding: 0 0.5em 0 0.5em;
-}
-
 /* Style Links */
+
+a.lt-a {
+  font-size: 1em;
+  color: var(--lt-colours-dark);
+  padding: 0 0.2em 0 0.2em;
+}
 
 /* Layout Styling */
 
@@ -115,12 +120,23 @@ a {
   text-align: center;
 }
 
-.lt-centre-child {
-  display: inline-block;
-  text-align: left;
+/* Default Flex Child Sizes */
+.lt-flex-50 {
+  flex: 0 0 50%;
 }
 
-/* Default Flex Child Sizes */
-/* 50/50 */
-/* 33/66 */
-/* 33/33/33 */
+.lt-flex-25 {
+  flex: 0 0 25%;
+}
+
+.lt-flex-33 {
+  flex: 0 0 33%;
+}
+
+.lt-flex-66 {
+  flex: 0 0 66%;
+}
+
+.lt-flex-centre {
+  justify-content: center;
+}
