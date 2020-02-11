@@ -10,7 +10,7 @@
 }
 
 /* Card Styling */
-.lite-card {
+.lt-card {
   padding: 0.25em 1em;
   margin: 0.5em 0;
   border-radius: 5px;
@@ -18,27 +18,27 @@
 }
 
 /* Hover Effects */
-.lite-hover {
+.lt-hover {
   transition: all 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
-.lite-hover:hover {
+.lt-hover:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.18), 0 10px 10px rgba(0,0,0,0.16);
   transform: translateY(-0.1em)
 }
 
 /* Shadow Styling */
-.lite-shadow {
+.lt-shadow {
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
 /* Horizontal List styling */
-ul.lite-hl {
+ul.lt-hl {
   list-style: none;
   padding: 0;
 }
 
-ul.lite-hl li {
+ul.lt-hl li {
   display:inline-block;
   border-style: none;
   font-size: 0.9em;
@@ -50,8 +50,8 @@ ul.lite-hl li {
   margin-bottom: 0.2em;
 }
 
-/* Button Styles */
-.lite-button {
+/* Button/Input Styles */
+.lt-button {
   background-color: var(--lite-colours-dark);
   color: var(--lite-colours-light);
   padding: 0.8em 2em;
@@ -62,9 +62,11 @@ ul.lite-hl li {
   border: none;
 }
 
-.lite-round {
+.lt-round {
   border-radius: 2em !important;
 }
+
+/* Text box input styling */
 
 /* Link/Text/Header Styling */
 
@@ -84,25 +86,39 @@ h3 {
   font-weight: 400;
 }
 
+a {
+  font-size: 1em;
+  color: var(--lite-colours-dark);
+  padding: 0 0.5em 0 0.5em;
+}
+
 /* Style Links */
 
 /* Layout Styling */
 
-.lite-flex-col {
+.lt-flex-col {
   display: flex;
   flex-direction: column;
 }
 
-.lite-flex-row {
+.lt-flex-row {
   display: flex;
   flex-direction: row;
 }
 
-.lite-content-column {
+.lt-content-column {
   padding: 0 20vw 30px 20vw;
 }
 
 /* Centre Div Horizontal */
+.lt-centre {
+  text-align: center;
+}
+
+.lt-centre-child {
+  display: inline-block;
+  text-align: left;
+}
 
 /* Default Flex Child Sizes */
 /* 50/50 */
