@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>lite.css demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="src/lite.css">
+    <link rel="stylesheet" href="demo.css">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:700|Open+Sans&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+    <div class=lite-content-column>
+      <h1><kbd>💧 </kbd>lite.css</h1>
+      <h2>A dead-simple just-add-water css library.</h2>
+      <p>This page gives a few example usages. It uses Montserrat for headers, Open Sans for body text, and Courier Prime for links and code. </p>
+      <p>You can use it by putting this in the head of your page:</p>
+      <code>&lt;link rel="stylesheet" href="https://unpkg.com/blocks.css/dist/blocks.min.css"/&gt;</code>
+      <div>
+        <h2>Examples</h2>
+        <p>Here are some example usages of the classes found in the stylesheet.</p>
+        <div class="lite-card">
+          <p>This is a regular card. Use the class <code>lite-card</code> to style it like this.
+        </div>
+        <div class="lite-card lite-hover">
+          <p>This card has a hover effect! Use the class <code>lite-hover</code> to style it like this. It also has a button which looks pretty cool :) Style it by adding <code>lite-button</code> to the div or input. You can make it round by adding <code>lite-round</code>.</p>
+            <button type="button" class="lite-button">Button</button> 
+            <button type="button" class="lite-button lite-round">Round</button> 
+        </div>
+        <div class="lite-card lite-shadow">
+          <p>
+            Add a shadow by using the class <code>lite-shadow</code>. This card also has some cool pill-style list items. Use them by adding the <code>lite-hl</code> class to your <code>ul</code>.
+          </p>
+          <ul class="lite-hl">
+            <li>cool</li>
+            <li>spicy</li>
+            <li>horizontal</li>
+            <li>list</li>
+          </ul>
+        </div>
+        <div class="lite-card">
+          <p>
+            You can also do inline code blocks like above by writing <code>&lt;code&gt;some code&lt;/code&gt;</code>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

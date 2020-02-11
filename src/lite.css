@@ -1,6 +1,6 @@
 :root {
   --lite-colours-light: #fbfffe;
-  --lite-colours-lightgray: #eee;
+  --lite-colours-lightgray: #f0f0f0;
   --lite-colours-gray: #999;
   --lite-arrow-color: #141021;
 
@@ -11,8 +11,10 @@
 
 /* Card Styling */
 .lite-card {
-  padding: 0.5em 1em;
+  padding: 0.25em 1em;
+  margin: 0.5em 0;
   border-radius: 5px;
+  background-color: var(--lite-colours-lightgray);
 }
 
 /* Hover Effects */
@@ -32,39 +34,57 @@
 
 /* Horizontal List styling */
 ul.lite-hl {
-  font-family: "Open Sans";
-  position: relative;
-  bottom: 0px;
-  margin-bottom: 1em;
-  float: left;
   list-style: none;
+  padding: 0;
 }
 
 ul.lite-hl li {
   display:inline-block;
   border-style: none;
-  font-size: 1em;
+  font-size: 0.9em;
   margin-right: 3px;
-  padding: 0.4rem;
+  padding: 0.3rem;
   border-radius: 2px;
   color: var(--lite-colours-light);
   background-color: var(--lite-colours-secondary);
-  margin-bottom: 0.4em;
+  margin-bottom: 0.2em;
 }
 
 /* Button Styles */
 .lite-button {
   background-color: var(--lite-colours-dark);
   color: var(--lite-colours-light);
-  width: 7em;
-  padding: 0.8em;
-  padding-bottom: 0.9em;
-  border-radius: 2em;
-  margin-top: 2em;
+  padding: 0.8em 2em;
+  border-radius: 5px;
+  margin-bottom: 1em;
+  margin-right: 1em;
   cursor: pointer;
+  border: none;
+}
+
+.lite-round {
+  border-radius: 2em !important;
 }
 
 /* Link/Text/Header Styling */
+
+code, pre {
+    font-family: monospace;
+    border-radius: 4px;
+    padding: 2px 4px 2px 4px;
+    line-height: 1.4;
+    background: rgba(0, 0, 0, .15);
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* Style Links */
 
 /* Layout Styling */
 
@@ -80,5 +100,11 @@ ul.lite-hl li {
 
 .lite-content-column {
   padding: 0 20vw 30px 20vw;
-  background: var(--light);
 }
+
+/* Centre Div Horizontal */
+
+/* Default Flex Child Sizes */
+/* 50/50 */
+/* 33/66 */
+/* 33/33/33 */

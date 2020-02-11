@@ -1,0 +1,19 @@
+body {
+	background-color: #fbfffe;
+}
+
+ul {
+    font-family: "Open Sans";
+}
+
+h1, h2, h3 {
+	font-family: Montserrat;
+}
+
+a {
+	font-family: Courier Prime;
+}
+
+p, ul, button {
+	font-family: Open Sans;
+}
