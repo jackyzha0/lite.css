@@ -4,7 +4,7 @@
 Tired of huge CSS bundles? Want something lightweight enough that will barely dent your page-load times? you came to the right place! `lite.css` is a grand total of ~1.77kB minified, meaning it will barely impact your page load time, while still coming with the standard HTML elements that you need.
 
 ## Examples
-See example usages on the [project page](https://jzhao.xyz/lite.css/).
+I use `lite.css` on my [personal website](https://jzhao.xyz). See more example usages on the [project page](https://jzhao.xyz/lite.css/).
 
 ## How do I use it?
 You can use `lite.css` in your project by adding the stylesheet to the `<head>` of your page:
