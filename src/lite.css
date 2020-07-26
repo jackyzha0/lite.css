@@ -23,7 +23,7 @@
 
 /* Hover Effects */
 .lt-hover {
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  transition: box-shadow 0.5s cubic-bezier(.25,.8,.25,1);
 }
 
 .lt-hover:hover {
@@ -54,10 +54,10 @@ ul.lt-hl li {
 }
 
 /* Button/Input Styles */
-.lt-button {
+.lt-button, input[type=button], input[type=submit] {
   background-color: var(--lt-colours-dark);
   color: var(--lt-colours-light);
-  padding: 0.5em 2em;
+  padding: 0.65em 2em;
   border-radius: 5px;
   margin-bottom: 1em;
   margin-right: 1em;
@@ -71,15 +71,37 @@ ul.lt-hl li {
 }
 
 /* Text box input styling */
+input {
+  margin: 0.5em 0;
+}
+
+input[type=email], input[type=number], input[type=password], input[type=search], input[type=text], textarea {
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  border: 1px solid var(--lt-colours-gray);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.8em;
+  background-color: var(--lt-colours-light);
+  outline-color: #ffffff00;
+  transition: outline-color 1s cubic-bezier(.25,.8,.25,1);
+}
+
+input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=text]:focus, textarea:focus {
+  outline-color: var(--lt-colours-secondary);
+}
+
+/* TODO: add radio styling */
+/* TODO: add checkbox styling */
+/* TODO: add accordion class */
 
 /* Link/Text/Header Styling */
-
 code, pre {
     font-family: monospace;
     border-radius: 4px;
-    padding: 2px 4px 2px 4px;
+    padding: 2px 4px;
     line-height: 1.4;
-    background: rgba(0, 0, 0, .15);
+    background: rgba(0, 0, 0, .10);
 }
 
 h1, h2 {
@@ -89,8 +111,6 @@ h1, h2 {
 h3 {
   font-weight: 400;
 }
-
-/* Style Links */
 
 a.lt-a {
   font-size: 1em;

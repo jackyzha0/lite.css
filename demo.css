@@ -2,20 +2,12 @@ body {
 	background-color: #fbfffe;
 }
 
-ul {
-    font-family: "Open Sans";
-}
-
-h1, h2, h3 {
-	font-family: Montserrat;
+h1, h2, h3, ul, p, button, label, input, textarea {
+	font-family: 'Roboto';
 }
 
 a {
-	font-family: Courier Prime;
-}
-
-p, ul, button {
-	font-family: Open Sans;
+	font-family: 'Courier Prime';
 }
 
 #pad {
@@ -23,10 +15,14 @@ p, ul, button {
 }
 
 img {
-	max-width: 248px;
-	max-height: 220px;
+	max-width: 200px;
+	max-height: 200px;
 	width: auto;
 	height: auto;
+}
+
+textarea {
+	width: 100%;
 }
 
 @media all and (max-width: 450px) {

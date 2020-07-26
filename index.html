@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="src/lite.css">
     <link rel="stylesheet" href="demo.css">
-    <link href="https://fonts.googleapis.com/css?family=Courier+Prime|Montserrat:700|Open+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
     <div class=lt-content-column>
       <h1><kbd>💡 </kbd>lite.css</h1>
       <h2>A <2kB just-add-water CSS library.</h2>
-      <p>This page gives a few example usages. It only adds fonts (Montserrat for headers, Open Sans for body text, and Courier Prime for links and code) and the rest is pure <code>lite.css</code>. </p>
+      <p>This page gives a few example usages. It only adds fonts (Roboto for headers and body text, and Courier Prime for links and code) and the rest is pure <code>lite.css</code>. </p>
       <p>You can use it by putting this in the head of your page:</p>
-      <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@latest/src/lite.min.css"/&gt;</code>
+      <code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jackyzha0/lite.css@v1.2/src/lite.min.css"/&gt;</code>
       <div>
         <h2>Examples</h2>
         <p>Here are some example usages of the classes found in the stylesheet.</p>
@@ -40,11 +41,28 @@
         </div>
         <div class="lt-card">
           <p>
-            You can also do inline code blocks like above by writing <code>&lt;code&gt;some code&lt;/code&gt;</code>. You can get <a class="lt-a" href="https://www.youtube.com/watch?v=kewXtkGmDtw">[links like this]</a> by adding <code>lt-a</code> to the <code>a</code> tag.
+            You can also do inline code blocks like above by writing <code>&lt;code&gt;some code&lt;/code&gt;</code>. You can get <a class="lt-a" href="https://www.youtube.com/watch?v=kewXtkGmDtw">links like this</a> by adding <code>lt-a</code> to the <code>a</code> tag.
+          </p>
+        </div>
+        <div class="lt-card">
+          <p>
+            What about form inputs? We got those too!
+            <form onsubmit="return false;">
+              <label for="text_input">Text Input</label><br>
+              <input type="text" id="text_input" name="text_input"><br>
+              <label for="text_area">Text Area</label><br>
+              <textarea rows=8 id="text_area" name="text_area"></textarea><br>
+              <label for="radio_input">Radio Input</label><br>
+              <input type="radio" id="option_1" name="radio_input" value="1">
+              <label for="option_1">Option 1</label><br>
+              <input type="radio" id="option_2" name="radio_input" value="2">
+              <label for="option_2">Option 2</label><br>
+              <input type="submit">
+            </form>
           </p>
         </div>
         <div id="flexDiv" class="lt-card lt-flex-row lt-clear lt-centre">
-          <img class="lt-card lt-flex-33 lt-clear" src="example.png"></img>
+          <img class="lt-clear" src="example.jpg"></img>
           <div id="pad" class="lt-flex-col lt-flex-centre">
             <p>Here's a picture of me! You can remove margins and padding by adding <code>lt-clear</code>. You can horizontally centre elements by adding <code>lt-centre</code> to its parent. If you're feeling spicy, you can also use flexboxes by adding either <code>lt-flex-row</code> or <code>lt-flex-col</code> to the parent div. Then, for each of the children, you can specify the flex basis. There are some default ones that you can use right away like <code>lt-flex-50</code>, <code>lt-flex-33</code>, <code>lt-flex-66</code>, and <code>lt-flex-25</code>. If you want to horizontally centre some text (or divs), wrap its parent with <code>lt-flex-col lt-flex-centre</code>.</p>
           </div>
